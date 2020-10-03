@@ -1,0 +1,384 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Cuprum', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+.container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  position: relative;
+  width: 400px;
+  height: 600px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 1px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to top, #f28749, #f2b84b);
+  /*clip-path: circle(400px at 50% -48.5%);*/
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.header {
+  position: relative;
+  height: 265px;
+}
+
+.hamburger-menu {
+  position: absolute;
+  width: 21px;
+  height: 16px;
+  top: 1.4rem;
+  left: 1.9rem;
+  z-index: 3;
+  cursor: pointer;
+  transition: 0.3s;
+  opacity: 0.8;
+}
+
+.hamburger-menu:hover {
+  opacity: 1;
+}
+
+.hamburger-menu .center {
+  position: absolute;
+  height: 2px;
+  width: 70%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  border-radius: 1px;
+}
+
+.hamburger-menu:before,
+.hamburger-menu:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #fff;
+}
+
+.hamburger-menu:before {
+  top: 0;
+}
+
+.hamburger-menu:after {
+  bottom: 0;
+}
+
+.main {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .image {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: url('img/profilepic.jpg') no-repeat center / cover;
+  border: 4px solid #f2e291;
+  margin-bottom: 2px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.image .hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #e6dbacb9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.image:hover .hover {
+  opacity: 1;
+}
+
+.hover.active {
+  opacity: 1;
+}
+
+.name {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1;
+  margin: 5px 0;
+}
+
+.sub-name {
+  font-family: 'Cutive Mono', monospace;
+  font-size: 1.2rem;
+  opacity: 0.8;
+  color: #fff;
+}
+
+.content {
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+}
+
+.invest-wrap,
+.save-wrap,
+.resources-wrap {
+  flex: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.invest {
+  position: relative;
+  display: inline-block;
+  padding: 5%;
+  width: 20rem;
+  margin: 2%;
+  background: linear-gradient(to right, #ffa500 0%, #effd5f 140%);
+  border-radius: 25px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
+
+.save {
+  position: relative;
+  display: inline-block;
+  padding: 5%;
+  width: 100%;
+  margin: 2%;
+  background: linear-gradient(to right, #ffa500 0%, #effd5f 140%);
+  border-radius: 25px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
+
+.resources {
+  position: relative;
+  display: inline-block;
+  padding: 5%;
+  width: 100%;
+  margin: 2%;
+  background: linear-gradient(to right, #ffa500 0%, #effd5f 140%);
+  border-radius: 25px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
+
+.covid19impact {
+  position: relative;
+  display: inline-block;
+  padding: 5%;
+  width: 100%;
+  margin: 2%;
+  background: linear-gradient(to right, #ffa500 0%, #effd5f 140%);
+  border-radius: 25px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
+
+.share {
+  padding: 7.6px 0;
+  width: 100%;
+  border: 2px solid #ffa500;
+  color: #ffa500;
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-left: 3px;
+  border-radius: 18.1px;
+}
+*/ .modal {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.modal img {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.3);
+  max-width: 100%;
+  max-height: 100%;
+  transition: 0.5s;
+}
+
+.modal.show {
+  opacity: 1;
+  z-index: 99;
+}
+
+.modal.show img {
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close:hover {
+  opacity: 0.5;
+}
+
+.close:before,
+.close:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 1.5px;
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+}
+
+.close:before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.close:after {
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+
+@media (max-width: 410px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .right {
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+  }
+}
+
+@media (max-width: 370px) {
+  .header {
+    height: 230px;
+  }
+
+  .card:before {
+    clip-path: circle(400px at 50% -74.5%);
+    height: 230px;
+  }
+
+  .hamburger-menu {
+    width: 16px;
+    height: 12px;
+    top: 1.1rem;
+    left: 1.5rem;
+  }
+
+  .main .image {
+    width: 90px;
+    height: 90px;
+    border-width: 3px;
+  }
+
+  .name,
+  .sub-name {
+    font-size: 1rem;
+  }
+
+  .content {
+    padding: 1.2rem 1.8rem 1.8rem 1.8rem;
+  }
+
+  .invest {
+    padding: 7.6px 0;
+    border-radius: 14.6px;
+    font-size: 0.6rem;
+  }
+
+  .save {
+    padding: 5.6px 0;
+    border-radius: 14.6px;
+    font-size: 0.6rem;
+  }
+
+  .resources {
+    padding: 5.6px 0;
+    border-radius: 14.6px;
+    font-size: 0.6rem;
+  }
+
+  .covid19impact {
+    padding: 1.6px 0;
+    border-radius: 14.6px;
+    font-size: 0.6rem;
+  }
+}
