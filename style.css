@@ -34,7 +34,7 @@ body {
   height: 250px;
   top: 0;
   left: 0;
-  background-image: linear-gradient(to top, #f28749, #f2b84b);
+  background-image: linear-gradient(to top, #233329, #63d471);
   /*clip-path: circle(400px at 50% -48.5%);*/
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
@@ -107,7 +107,7 @@ body {
   height: 110px;
   border-radius: 50%;
   background: url('img/profilepic.jpg') no-repeat center / cover;
-  border: 4px solid #f2e291;
+  border: 4px solid #52ac5c;
   margin-bottom: 2px;
   overflow: hidden;
   cursor: pointer;
@@ -177,7 +177,7 @@ body {
   padding: 5%;
   width: 20rem;
   margin: 2%;
-  background: linear-gradient(to right, #ffa500 0%, #effd5f 140%);
+  background: linear-gradient(to right, #233329 0%, #63d471 140%);
   border-radius: 25px;
   color: #fff;
   text-align: center;
@@ -194,7 +194,7 @@ body {
   padding: 5%;
   width: 100%;
   margin: 2%;
-  background: linear-gradient(to right, #ffa500 0%, #effd5f 140%);
+  background: linear-gradient(to right, #233329 0%, #63d471 140%);
   border-radius: 25px;
   color: #fff;
   text-align: center;
@@ -211,7 +211,7 @@ body {
   padding: 5%;
   width: 100%;
   margin: 2%;
-  background: linear-gradient(to right, #ffa500 0%, #effd5f 140%);
+  background: linear-gradient(to right, #233329 0%, #63d471 140%);
   border-radius: 25px;
   color: #fff;
   text-align: center;
@@ -228,7 +228,7 @@ body {
   padding: 5%;
   width: 97%;
   margin: 2%;
-  background: linear-gradient(to right, #ffa500 0%, #effd5f 140%);
+  background: linear-gradient(to right, #233329 0%, #63d471 140%);
   border-radius: 25px;
   color: #fff;
   text-align: center;
@@ -246,20 +246,7 @@ body {
   opacity: 0.7;
 }
 
-.share {
-  padding: 7.6px 0;
-  width: 100%;
-  border: 2px solid #ffa500;
-  color: #ffa500;
-  text-decoration: none;
-  text-align: center;
-  font-size: 0.7rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-left: 3px;
-  border-radius: 18.1px;
-}
-*/ .modal {
+.modal {
   position: fixed;
   width: 100%;
   height: 100vh;
